@@ -82,7 +82,7 @@ Lowest F1 on the test set:
 | balance_not_updated_after_bank_transfer | 0.835 |
 | verify_my_identity | 0.840 |
 
-The most frequent confusions are `why_verify_identity` → `verify_my_identity` (6), `declined_transfer` → `declined_card_payment` (6), `card_arrival` → `card_delivery_estimate` (4), `fiat_currency_support` → `exchange_via_app` (4) and `top_up_reverted` → `top_up_failed` (4). Most are between intents with near-identical meanings. My reading is that some of the remaining error comes from overlapping intent definitions, not the model, but I did not read the misclassified messages to check.
+The most frequent confusions are `why_verify_identity` → `verify_my_identity` (6), `declined_transfer` → `declined_card_payment` (6), `card_arrival` → `card_delivery_estimate` (4), `fiat_currency_support` → `exchange_via_app` (4) and `top_up_reverted` → `top_up_failed` (4). Most are between intents with near-identical meanings. My reading is that some of the remaining error comes from overlapping intent definitions, not the model.
 
 ### Demo app
 
@@ -95,7 +95,7 @@ The app returns the top 5 intents with softmax probabilities. Trials I ran:
 | What is my account balance | verify_source_of_funds | 52% |
 | What is the weather like tomorrow? | card_delivery_estimate | 86% |
 
-The model always picks one of the 77 intents, and its confidence does not separate in-scope from out-of-scope input: the weather message gets a higher probability than the card message. A confidence threshold would not fix that, and I did not try anything else. I did not check whether Banking77 has intents matching the cancel-card or balance messages.
+The model always picks one of the 77 intents, and its confidence does not separate in-scope from out-of-scope input: the weather message gets a higher probability than the card message. A confidence threshold would not fix that, and I did not try anything else.
 
 ## A problem I hit
 
