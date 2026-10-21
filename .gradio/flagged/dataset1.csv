@@ -1,0 +1,2 @@
+Customer message,Predicted intent,timestamp
+I wanna cancel my card,"{""label"": ""cancel_transfer"", ""confidences"": [{""label"": ""cancel_transfer"", ""confidence"": 0.3797300159931183}, {""label"": ""activate_my_card"", ""confidence"": 0.19987669587135315}, {""label"": ""card_not_working"", ""confidence"": 0.11508539319038391}, {""label"": ""lost_or_stolen_card"", ""confidence"": 0.07913737744092941}, {""label"": ""request_refund"", ""confidence"": 0.04048071429133415}]}",2026-10-20 13:52:05.625778
