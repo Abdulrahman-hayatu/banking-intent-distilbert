@@ -1,0 +1,3 @@
+Train: 10003 | Test: 3080
+Accuracy: 0.8571
+Macro-F1: 0.8558

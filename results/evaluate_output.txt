@@ -1,0 +1,28 @@
+Device: cpu
+Test size: 3080
+Accuracy: 0.9279
+Macro-F1: 0.9280
+
+10 weakest intents by F1:
+  declined_transfer                             F1 0.812 (n=40)
+  declined_card_payment                         F1 0.822 (n=40)
+  failed_transfer                               F1 0.829 (n=40)
+  balance_not_updated_after_bank_transfer       F1 0.835 (n=40)
+  verify_my_identity                            F1 0.840 (n=40)
+  pending_transfer                              F1 0.846 (n=40)
+  topping_up_by_card                            F1 0.846 (n=40)
+  why_verify_identity                           F1 0.857 (n=40)
+  lost_or_stolen_card                           F1 0.867 (n=40)
+  top_up_failed                                 F1 0.867 (n=40)
+
+10 most frequent confusions (true -> predicted):
+    6x why_verify_identity -> verify_my_identity
+    6x declined_transfer -> declined_card_payment
+    4x card_arrival -> card_delivery_estimate
+    4x fiat_currency_support -> exchange_via_app
+    4x top_up_reverted -> top_up_failed
+    4x verify_my_identity -> why_verify_identity
+    3x pin_blocked -> change_pin
+    3x wrong_amount_of_cash_received -> declined_cash_withdrawal
+    3x declined_transfer -> failed_transfer
+    3x transfer_timing -> balance_not_updated_after_bank_transfer

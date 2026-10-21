@@ -1,0 +1,19 @@
+Epoch 1: loss 3.6512 | val acc 0.6723 | val macro-F1 0.5961
+Writing model shards: 100% 1/1 [00:03<00:00,  3.15s/it]
+Epoch 2: loss 0.9862 | val acc 0.8781 | val macro-F1 0.8635
+Writing model shards: 100% 1/1 [00:00<00:00,  1.41it/s]
+Epoch 3: loss 0.3424 | val acc 0.8971 | val macro-F1 0.8951
+Writing model shards: 100% 1/1 [00:06<00:00,  6.79s/it]
+Epoch 4: loss 0.1761 | val acc 0.9041 | val macro-F1 0.9017
+Writing model shards: 100% 1/1 [00:06<00:00,  6.26s/it]
+Epoch 5: loss 0.1045 | val acc 0.9031 | val macro-F1 0.9031
+Writing model shards: 100% 1/1 [00:05<00:00,  5.92s/it]
+Epoch 6: loss 0.0623 | val acc 0.9111 | val macro-F1 0.9085
+Writing model shards: 100% 1/1 [00:05<00:00,  5.82s/it]
+Epoch 7: loss 0.0406 | val acc 0.9091 | val macro-F1 0.9067
+Epoch 8: loss 0.0297 | val acc 0.9131 | val macro-F1 0.9118
+Writing model shards: 100% 1/1 [00:06<00:00,  6.07s/it]
+Epoch 9: loss 0.0218 | val acc 0.9141 | val macro-F1 0.9127
+Writing model shards: 100% 1/1 [00:05<00:00,  5.97s/it]
+Epoch 10: loss 0.0194 | val acc 0.9141 | val macro-F1 0.9114
+Best val macro-F1: 0.9127 | saved to models/distilbert-banking77

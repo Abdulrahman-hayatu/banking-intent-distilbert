@@ -119,7 +119,7 @@ banking-intent-distilbert/
 ├── train.py         # DistilBERT fine-tuning: layer-wise LR decay, warmup, early stopping
 ├── evaluate.py      # test-set metrics and error analysis
 ├── app.py           # Gradio demo
-├── data/            # empty; datasets downloads and caches the data itself
+├── results/         # baseline, evaluate and training log results
 └── models/          # weights are not in the repo (see How to run)
 ```
 
